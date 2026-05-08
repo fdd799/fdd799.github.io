@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import { createHead } from '@vueuse/head'
 
-createApp(App).mount('#app')
+const head = createHead()
+
+createApp(App).use(head).mount('#app')

@@ -1,5 +1,13 @@
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Dot for Cat',
+  meta: [
+    { name: 'description', content: 'Dot for Cat' },
+  ],
+})
 
 const x = ref(window.innerWidth / 2)
 const y = ref(window.innerHeight / 2)
